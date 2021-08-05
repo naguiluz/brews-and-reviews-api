@@ -55,6 +55,9 @@ app.use(express.urlencoded({ extended: true }))
 // log each request as it comes in for debugging
 app.use(requestLogger)
 
+// test for route to homepage
+app.get('/', (req, res) => res.send('home page'))
+
 // register route files
 app.use(beerRoutes)
 app.use(userRoutes)
