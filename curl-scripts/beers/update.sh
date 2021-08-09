@@ -10,11 +10,12 @@ curl "${API}${URL_PATH}/${ID}" \
 --header "Authorization: Bearer ${TOKEN}" \
 --data '{
     "beer": {
-      "name": "'"${NAME}"'",
-      "brewery": "'"${BREWERY}"'",
-      "type": "'"${TYPE}"'",
-      "rating": "'"${RATING}"'",
-      "description": "'"${DESCRIPTION}"'"
+      "Name": "'"${NAME}"'",
+      "Brewery": "'"${BREWERY}"'",
+      "Type": "'"${TYPE}"'",
+      "Rating": "'"${RATING}"'",
+      "Description": "'"${DESCRIPTION}"'",
+      "Image": "'"${LINK}"'"
     }
   }'
 

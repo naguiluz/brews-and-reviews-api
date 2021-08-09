@@ -6,20 +6,20 @@ const beerSchema = new mongoose.Schema({
     required: true
   },
   Brewery: {
-    type: String,
-    required: true
+    type: String
   },
   Type: {
-    type: String,
-    required: true
+    type: String
   },
   Rating: {
-    type: Number,
-    required: true
+    type: Number
   },
   Description: {
-    type: String,
-    required: true
+    type: String
+  },
+  Image: {
+    type: String
+
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
